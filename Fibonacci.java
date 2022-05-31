@@ -21,14 +21,20 @@ public class Fibonacci {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = 0;
+        int T = 0; // 테스트 수
+        System.out.println("몇 번의 테스트를 할까요? (숫자입력)");
+        T = scan.nextInt();
+        for(int i = 0; i < T; i++) {
+            System.out.println("숫자를 입력하세요");
+            n = scan.nextInt();
 
-        System.out.println("숫자를 입력하세요");
-        n = scan.nextInt();
+            fibonacci(n);
 
-        scan.close();
+            System.out.println("0의 개수: " + count0 + " 1의 개수: " + count1);
 
-        fibonacci(n);
-        
-        System.out.println("0의 개수: " + count0 + " 1의 개수: " + count1);
-    }
+            count0 = 0;
+            count1 = 0;
+        }
+    scan.close();
+}
 }
