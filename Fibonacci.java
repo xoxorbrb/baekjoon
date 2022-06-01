@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Fibonacci {
+public class Fibonacci{
 
     static int count0 = 0;
     static int count1 = 0;
@@ -24,7 +24,7 @@ public class Fibonacci {
         int T = 0; // 테스트 수
         System.out.println("몇 번의 테스트를 할까요? (숫자입력)");
         T = scan.nextInt();
-        for(int i = 0; i < T; i++) {
+        for (int i = 0; i < T; i++) {
             System.out.println("숫자를 입력하세요");
             n = scan.nextInt();
 
@@ -35,6 +35,6 @@ public class Fibonacci {
             count0 = 0;
             count1 = 0;
         }
-    scan.close();
-}
+        scan.close();
+    }
 }
